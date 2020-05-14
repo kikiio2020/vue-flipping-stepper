@@ -1,13 +1,9 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
-const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
-var baseConfig = {
-	mode: 'production',
-	output: {
-	    path: path.resolve(__dirname + '/dist/')
-	},
+module.exports = merge(webpack[0], {
+	mode: 'development',
 	module: {
 	    rules: [
 	    	{
@@ -20,7 +16,8 @@ var baseConfig = {
 	    		use: {
 	    			loader: 'babel-loader',
 	    			options:{
-	    				presets: ['@babel/preset-env']
+	    				presets: ['@babel/preset-env'],
+	    				plugins: ['@babel/plugin-transform-runtime']
 	    			}
 	    		}
 	    	},
@@ -35,7 +32,7 @@ var baseConfig = {
 	    ],
 	},
 	plugins: [
-	    new VueLoaderPlugin(),
+	    new VueLoaderPlugin()
 	],
 	externals: {
 		BIconPlayFill: 'BIconPlayFill',
@@ -43,30 +40,4 @@ var baseConfig = {
 		BButton: 'BButton',
 		BTooltip: 'BTooltip', 
 	}
-};
-
-module.exports = [
-	merge(
-		baseConfig, 
-		{
-			entry: path.resolve(__dirname + '/src/plugin.js'),
-			output: {
-				filename: 'flipping-stepper.min.js',
-				libraryTarget: 'window',
-				library: 'FlippingStepper'
-			}
-		}
-	),
-	merge(
-		baseConfig,
-		{
-			entry: path.resolve(__dirname + '/src/FlippingStepper.vue'),
-			output: {
-				filename: 'flipping-stepper.js',
-				libraryTarget: 'umd',
-				library: 'flipping-stepper',
-				umdNamedDefine: true
-			}
-		}
-	)
-];
+});

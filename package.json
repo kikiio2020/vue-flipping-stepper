@@ -4,26 +4,35 @@
  "description": "",
  "main": "dist/flipping-stepper.js",
  "scripts": {
-  "build": "rm -rf ./dist/* && ./node_modules/webpack/bin/webpack.js --config ./webpack.config.js"
+  "build": "rm -rf ./dist/* && ./node_modules/webpack/bin/webpack.js --config ./webpack.config.js",
+  "test": "mochapack --webpack-config ./webpack.unittest.config.js --require test/unit/setup.js test/unit/*.spec.js"
  },
  "repository": {
   "type": "git",
   "url": "git+https://github.com/kikiio2020/vue-flipping-stepper.git"
  },
  "devDependencies": {
-  "@babel/core": "^7.8.6",
-  "@babel/preset-env": "^7.8.6",
-  "babel-loader": "^8.0.6",
-  "bootstrap": "^4.4.1",
+  "@babel/core": "^7.9.6",
+  "@babel/plugin-transform-runtime": "^7.9.6",
+  "@babel/preset-env": "^7.9.6",
+  "@vue/test-utils": "^1.0.2",
+  "babel": "^6.23.0",
+  "babel-loader": "^8.1.0",
+  "bootstrap": "^4.5.0",
+  "chai": "^4.2.0",
+  "jsdom": "^16.2.2",
+  "jsdom-global": "^3.0.2",
+  "mocha": "^7.1.2",
+  "mochapack": "^2.0.0",
   "vue": "^2.6.11",
-  "vue-loader": "^15.9.0",
+  "vue-loader": "^15.9.2",
   "vue-template-compiler": "^2.6.11",
-  "webpack": "^4.42.0",
+  "webpack": "^4.43.0",
   "webpack-cli": "^3.3.11",
   "webpack-merge": "^4.2.2"
  },
  "dependencies": {
-  "bootstrap-vue": "^2.5.0"
+  "bootstrap-vue": "^2.14.0"
  },
  "keywords": [
   "vue",
