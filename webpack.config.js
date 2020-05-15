@@ -38,10 +38,10 @@ var baseConfig = {
 	    new VueLoaderPlugin(),
 	],
 	externals: {
-		BIconPlayFill: 'BIconPlayFill',
-		BIconSkipBackwardFill: 'BIconSkipBackwardFill',
 		BButton: 'BButton',
-		BTooltip: 'BTooltip', 
+		BTooltip: 'BTooltip',
+		BIconArrowRight: 'BIconArrowRight',
+		BIconArrowLeft: 'BIconArrowLeft',
 	}
 };
 
