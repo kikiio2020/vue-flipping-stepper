@@ -5,7 +5,9 @@
  "main": "dist/flipping-stepper.js",
  "scripts": {
   "build": "rm -rf ./dist/* && ./node_modules/webpack/bin/webpack.js --config ./webpack.config.js",
-  "test": "mochapack --webpack-config ./webpack.unittest.config.js --require test/unit/setup.js test/unit/*.spec.js"
+  "test": "mochapack --webpack-config ./webpack.unittest.config.js --require test/unit/setup.js test/unit/*.spec.js",
+  "docs:dev": "vuepress dev docs",
+  "docs:build": "vuepress build docs"
  },
  "repository": {
   "type": "git",
@@ -27,6 +29,7 @@
   "vue": "^2.6.11",
   "vue-loader": "^15.9.2",
   "vue-template-compiler": "^2.6.11",
+  "vuepress": "^1.5.0",
   "webpack": "^4.43.0",
   "webpack-cli": "^3.3.11",
   "webpack-merge": "^4.2.2"
@@ -36,6 +39,7 @@
  },
  "keywords": [
   "vue",
+  "flipping",
   "stepper"
  ],
  "author": "Daniel 'Kikiio' Leung",
