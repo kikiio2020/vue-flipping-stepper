@@ -7,12 +7,35 @@ The package works on apps with Bootstrap-Vue.
 
 #### NPM
 ``` bash
-npm install @kikiio2020/vue-flipping-stepper
+npm install vue bootstrap-vue bootstrap @kikiio2020/vue-flipping-stepper
+```
+
+``` js
+//app.js
+require('./bootstrap');
+
+window.Vue = require('vue');
+
+import Vue from 'vue';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+import FlippingStepper from '@kikiio2020/vue-flipping-stepper';
+
+Vue.use(FlippingStepper);
+
+const app = new Vue({
+    el: '#app',
+	components: {FlippingStepper}
+});
 ```
 
 #### CDN
 ``` bash
 ```
+
+
+
 
 ## Basic Example
 
@@ -28,7 +51,10 @@ npm install @kikiio2020/vue-flipping-stepper
 	</template>
 </flipping-stepper>
 ```
-**Note:** Named-slot names must be integer indicating its position. 
+
+::: warning Note
+Named-slot names must be integer indicating its position. 
+:::
 
 More [examples](/#more-examples) below.
 
