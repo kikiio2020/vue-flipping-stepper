@@ -124,14 +124,31 @@ When the value object is provided you can change which slot to go next by changi
 
 ## Built With
 
-* [Bootstrap-Vue](https://bootstrap-vue.org/)
-* [Bootstrap](https://getbootstrap.com/)
+* [Vue](vuejs.org)
+* [Bootstrap-Vue](https://bootstrap-vue.org)
+* [Bootstrap](https://getbootstrap.com)
+
+#### Bundling
+* [Webpack](https://webpack.js.org)
+
+#### Testing
+* [Mocha](https://mochajs.org)
+* [Chai](https://www.chaijs.com)
+
+#### Documentation
+* [VuePress](https://vuepress.vuejs.org)
 
 ## Authors
 
 * [**Daniel 'Kikiio' Leung**](https://kikiio.com)
 
+## Contributing
+[Contribute guide](/CONTRIBUTE.md)
+
+## Code of Conduct
+[Code of Conduct guide](/CONDUCT.md)
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE.md) file for details
 
