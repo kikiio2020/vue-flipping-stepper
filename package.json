@@ -1,6 +1,6 @@
 {
  "name": "@kikiio2020/vue-flipping-stepper",
- "version": "0.0.1",
+ "version": "0.0.21",
  "description": "",
  "main": "dist/flipping-stepper.js",
  "scripts": {
