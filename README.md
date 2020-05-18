@@ -6,7 +6,7 @@
 <p>&nbsp;</p>
 
 <p align="center"><b>
->> <a href='https://kikiio.com/project/vue-flipping-stepper/'>Documentation</a> <<
+>> <a href='https://kikiio.com/project/vue-flipping-stepper/' target="_blank">Documentation</a> <<
 </b></p>
 
 <!--<p align="center"><b>
