@@ -12,7 +12,7 @@ npm install vue bootstrap-vue bootstrap @kikiio2020/vue-flipping-stepper
 
 ``` js
 //app.js
-require('./bootstrap');
+require('bootstrap');
 
 window.Vue = require('vue');
 
@@ -30,15 +30,7 @@ const app = new Vue({
 });
 ```
 
-#### CDN
-``` bash
-```
-
-
-
-
 ## Basic Example
-
 <img src="https://www.dropbox.com/s/gen0byhvkl0dy9f/flipping-stepper-basic-screen1.png?raw=1">
 
 ``` js
@@ -51,6 +43,17 @@ const app = new Vue({
 	</template>
 </flipping-stepper>
 ```
+
+<details>
+<summary>Sandbox</summary>
+<iframe
+     src="https://codesandbox.io/embed/affectionate-ganguly-herh8?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="affectionate-ganguly-herh8"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+</details>
 
 ::: warning Note
 Named-slot names must be integer indicating its position. 
@@ -142,13 +145,11 @@ When the value object is provided you can change which slot to go next by changi
 
 * [**Daniel 'Kikiio' Leung**](https://kikiio.com)
 
-## Contributing
-[Contribute guide](/CONTRIBUTE.md)
+## Contribute
+* [Read here](./CONTRIBUTE.md)
 
 ## Code of Conduct
-[Code of Conduct guide](/CONDUCT.md)
+* [Read here](./CONDUCT.md)
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE.md) file for details
-
+* [MIT](./LICENSE.md)

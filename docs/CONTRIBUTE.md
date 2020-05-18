@@ -2,7 +2,7 @@
 
 Thank you so much for your interest to help! 
 
-Please read out [Code of Conduct](/CONDUCT.md)
+Please read our [Code of Conduct](/CONDUCT.md)
 
 
 ## Test
@@ -20,7 +20,7 @@ To launch local document site:
 npm run docs:dev
 ``` 
 
-Build before committing, as the hosting site might not have auto-build 
+Build before committing, as the hosting site might not have auto-build setup yet. 
 ``` bash
 npm run docs:build
 ```

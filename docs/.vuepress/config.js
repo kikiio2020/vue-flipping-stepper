@@ -1,4 +1,5 @@
 module.exports = {
+	base: '/project/vue-flipping-stepper/',
 	title: 'VueFlippingStepper',
 	description: 'Simple rotating stepper that rotates horizontally between steps',
 	themeConfig: {
